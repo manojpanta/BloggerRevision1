@@ -10,6 +10,10 @@ describe 'user sees all the articles' do
 
       expect(page).to have_content(article1.title)
       expect(page).to have_content(article2.title)
+      expect(page).to have_link(article1.title)
+      expect(page).to have_link(article2.title)
+      expect(page).to have_link("Create New Article")
+
       expect(current_path).to eq('/articles')
     end
   end

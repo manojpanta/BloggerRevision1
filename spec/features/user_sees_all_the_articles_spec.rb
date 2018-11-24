@@ -9,7 +9,7 @@ describe 'user sees all the articles' do
       visit articles_path
 
       expect(page).to have_content(article1.title)
-      expect(page).to have_content(article1.body)
+      expect(page).to have_content(article2.title)
       expect(current_path).to eq('/articles')
     end
   end

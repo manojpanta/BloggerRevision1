@@ -18,6 +18,8 @@ describe "user deletes an article" do
       expect(current_path).to eq(article_path(article_1))
       expect(page).to have_content('Manoj')
       expect(page).to have_content('Manoj is coding')
+      expect(page).to have_content('Your Article Manoj Was Updated!')
+
     end
   end
 end

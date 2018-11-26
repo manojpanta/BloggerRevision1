@@ -11,6 +11,7 @@ describe 'user sees all the articles' do
       click_on article1.title
 
       expect(page).to have_content(article1.title)
+      expect(page).to have_content(article1.body)
     end
   end
 end

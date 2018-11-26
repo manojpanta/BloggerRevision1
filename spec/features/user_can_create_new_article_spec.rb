@@ -17,6 +17,8 @@ describe 'user sees all the articles' do
 
       expect(page).to have_content('New Title')
       expect(page).to have_content('New body')
+      expect(page).to have_content('Your Article New Title Was Created!')
+
 
     end
   end

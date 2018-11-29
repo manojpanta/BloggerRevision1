@@ -1,7 +1,3 @@
-class Admin::CategoriesController < ApplicationController
-
-  def index
-    
-  end
+class Admin::CategoriesController < Admin::BaseController
 
 end
